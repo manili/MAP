@@ -1,0 +1,40 @@
+//Fill R1 with 0x0;
+LRI 0 R1
+//Fill R2 with 0xF;
+LRI 15 R2
+//Store R1 in heap[0x0];
+STI 0 R1
+//Store R2 in heap[0x1];
+STI 1 R2
+//Load R1 with heap[0x0];
+LDI 0 R1
+//Push R2 to stack;
+PUSH R2
+//R1 = R1 + R2;
+ADD R1
+//Store R1 in heap[0x2];
+STI 2 R1
+//Fill R2 with 0x1;
+LRI 1 R2
+//R2 = R1 & R2;
+AND R2
+//Fill R1 with 0xE;
+LRI 14 R1
+//Branch to Ins[R1];
+BRNR R1
+//Origin 14;
+ORG 14
+//Store R2 in heap[0x3];
+STI 3 R2
+//Push R1 to stack;
+PUSH R1
+//Pop to R2;
+POP R2
+//Fill R1 with 0xF;
+LRI 15 R1
+//R1 << 1;
+SLL R1
+//R2 = R2 + R1;
+ADD R2
+//Halt;
+HLT

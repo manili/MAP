@@ -1,0 +1,1 @@
+NOTE : INS.mtbl always has to be in the same directory as MAP Assembler.exec !
